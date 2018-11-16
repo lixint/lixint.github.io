@@ -400,7 +400,6 @@
                  <span class="post-meta-item-text">阅读次数：</span>
                
                  <span class="leancloud-visitors-count"></span>
-                 <span>℃<span>
              </span>
           
 
@@ -410,7 +409,7 @@
 
           
 
-        </span></span></div>
+        </div>
       </header>
     
 
@@ -865,15 +864,15 @@
     
 
     $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + "8yYQa5uYDzjoU1VzNG7C4dnC-gzGzoHsz")
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "ba8rsHTrxwePQYypl1mLtlkM-gzGzoHsz")
         .done(function ({ api_server }) {
           var Counter = function (method, url, data) {
             return $.ajax({
               method: method,
               url: `https://${api_server}/1.1${url}`,
               headers: {
-                'X-LC-Id': "8yYQa5uYDzjoU1VzNG7C4dnC-gzGzoHsz",
-                'X-LC-Key': "uXeHAdowaRJYDY9CVERRCwPt",
+                'X-LC-Id': "ba8rsHTrxwePQYypl1mLtlkM-gzGzoHsz",
+                'X-LC-Key': "TRe2e9a0df16Y70fU0xXXOO6",
                 'Content-Type': 'application/json',
               },
               data: data,
