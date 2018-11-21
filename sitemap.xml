@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lixint.me/hexo-git.html</loc>
+    
+    <lastmod>2018-11-21T13:40:08.627Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lixint.me/githubpage.html</loc>
+    
+    <lastmod>2018-11-21T11:59:58.340Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lixint.me/hexo-blog.html</loc>
+    
+    <lastmod>2018-11-21T09:41:33.016Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lixint.me/baidu_verify_66MsbaL0x4.html</loc>
     
     <lastmod>2018-11-20T02:00:19.171Z</lastmod>
@@ -26,41 +47,6 @@
     <loc>https://lixint.me/categories/index.html</loc>
     
     <lastmod>2018-11-19T11:43:19.562Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixint.me/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html</loc>
-    
-    <lastmod>2018-11-19T07:40:47.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixint.me/hello-world.html</loc>
-    
-    <lastmod>2018-11-18T14:03:28.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixint.me/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0.html</loc>
-    
-    <lastmod>2018-11-18T13:17:48.173Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixint.me/aaa.html</loc>
-    
-    <lastmod>2018-11-17T11:30:32.654Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixint.me/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0.html</loc>
-    
-    <lastmod>2018-11-16T14:05:50.639Z</lastmod>
     
   </url>
   
