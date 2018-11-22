@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://zheteng.ml/sitemap.xml
-Sitemap: https://zheteng.ml/baidusitemap.xml
+Sitemap: https://www.lixint.me/sitemap.xml
+Sitemap: https://www.lixint.me/baidusitemap.xml

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo博客本地环境安装步骤]]></title>
+    <url>%2Fhexo-git.html</url>
+    <content type="text"><![CDATA[本篇文章主要进行了Hexo博客搭建本地环境的配置及将博客发布至Github Page。成功将Hexo博客在本地及GIthub Page运行。 1. 本地环境安装1.1 安装Node.js打开Node.js下载页选择Windows安装包，根据系统选择32位或者64位进行下载。 下载完成后打开进行安装。 步骤1：勾选I accept，Next 步骤2：设置安装路径，默认即可 步骤3：选择需要安装的包，默认即可步骤4：默认即可步骤5：Next步骤6：点击Finish完成安装。 步骤7：检查一下Node.js版本 开始 - 运行 - 输入cmd ，输入node --version，可以看到Node.js的版本。 1.2 安装GitGit安装跟Node.js一样简单，打开Git下载页，点击右侧的下载按钮。 下载完成后，打开安装，这个步骤比较多，一路Next即可，无需过多配置。 点击Finish完成安装。 此时在桌面空白处点击右键，你就会发现右键菜单多了两个命令 Git GUI here和Git bash here 至此，Node.js和Git全部安装完成。 后面我们要进行Hexo博客框架的安装以及将博客发布到Github Page。]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Git</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Github Page + Hexo 博客搭建，Next主题个性化修改]]></title>
+    <url>%2Fhexo-blog.html</url>
+    <content type="text"></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NEXT主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Github注册以及Github Page创建]]></title>
+    <url>%2Fgithubpage.html</url>
+    <content type="text"><![CDATA[一、准备工作1.注册Github，建立Gihub Page仓库打开Github首页，点击右上角的Sign up或者直接在2处填写信息后点击Sign up for Github进行注册。 Verify account处点击两侧的箭头让图上的动物变成正的，验证完成后点击下方的Creat an account进到下一步。 选择Free方案，下方的两个选项可选可不选，点击Continue继续 然后选择Skip this step完成Github的注册。此时Github会给你注册时填写的邮箱发送一封验证邮件，完成邮箱验证后才可以创建仓库。 完成验证后，依次点击1，2处，在新页面点击NEW按钮。或者直接点击3处进行仓库创建。 填入必要的信息，这里的仓库名必须要填&lt;用户名&gt;.github.io例如，图示我注册的账户名为creataccount2，仓库名就需要填写creataccount2.github.io。填写必要的描述，也可不填。勾选Initialize this repository with a README点击Creat repository进行创建。 依次点击1，2新建一个文件。 文件名为index.html，内容随意。点击Commit new file进行创建。 打开&lt;用户名&gt;.github.io 一个简单的网页，内容就是刚才我们输入的内容。 至此，Github Page已经创建完成了。后续我们将利用Hexo博客框架对Github Page的内容进行进一步的丰富。]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github Page</tag>
+      </tags>
+  </entry>
+</search>
