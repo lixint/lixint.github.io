@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
+    
+    <lastmod>2018-11-30T02:41:11.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.lixint.me/githubpage.html</loc>
+    
+    <lastmod>2018-11-29T13:24:04.152Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lixint.me/hexo-githubpages.html</loc>
     
-    <lastmod>2018-11-27T13:53:19.072Z</lastmod>
+    <lastmod>2018-11-27T14:12:26.883Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>https://www.lixint.me/hexo-blog.html</loc>
     
     <lastmod>2018-11-22T11:36:51.677Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lixint.me/githubpage.html</loc>
-    
-    <lastmod>2018-11-22T11:36:22.198Z</lastmod>
     
   </url>
   
