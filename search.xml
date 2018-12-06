@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python自带模块命令记录]]></title>
+    <url>%2Fpythoncommand.html</url>
+    <content type="text"><![CDATA[获取文件名/后缀名1234567import osfile = "Hello.py"# 获取前缀（文件名称）assert os.path.splitext(file)[0] == "Hello"# 获取后缀（文件类型）assert os.path.splitext(file)[-1] == ".py"assert os.path.splitext(file)[-1][1:] == "py" 判断文件/目录是否存在12345import osos.path.exists("1.txt")#Trueos.path.exists("dirpath")#True]]></content>
+      <categories>
+        <category>Python学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Sublime Text3及配置Python使用环境]]></title>
+    <url>%2Fsublimetext.html</url>
+    <content type="text"><![CDATA[安装Package Control使用Ctrl+`（tab键上面）(或View &gt; Show Console menu) 打开Sublime Text控制台，将下面的Python代码粘贴到控制台里: 代码出处 1import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) 如果在Perferences-&gt;package settings中看到package control这一项，则表明安装成功。 用Package Control查看已安装的插件1.按下Ctrl+Shift+P调出命令面板。2.输入install 调出 Install Package 选项并回车。等待。在列表中选中要安装的插件，或者输入插件名(比如要安装IMESupport插件，则输入IMESupport，它会实时过滤筛选结果)，根据命令面板中的过滤结果，选择要安装的插件。安装中文插件。搜索localiza，在搜索出来的列表中选择点击安装如果安装失败的话可以到汉化项目页面下载源码，重命名文件夹为ChineseLocalization，放到C:\Users\用户名\AppData\Roaming\Sublime Text 3\Packages中。 禁用 Sublime Text 3 检测新版本设置 Preferences -&gt; Settings-User添加 &quot;update_check&quot;: false 安装主题推荐 Boxy Ctrl(Mac下Cmd)+Shift+P install package -&gt; Boxy Theme install package -&gt; A File Icon 其他插件#### SublimeTmpl 新建文件模板Package settings - sublime tmpl - settings User设置，123456789&#123; &quot;disable_keymap_actions&quot;: false, // &quot;all&quot;; &quot;html,css&quot; &quot;date_format&quot; : &quot;%Y-%m-%d %H:%M:%S&quot;, &quot;attr&quot;: &#123; &quot;author&quot;: &quot;lixint&quot;, &quot;email&quot;: &quot;lixint8@gmail.com&quot;, &quot;link&quot;: &quot;https://github.com/lixint/&quot; &#125; &#125; Package settings - sublime tmpl - key bindings-user设置 123456[ &#123; &quot;caption&quot;: &quot;Tmpl: Create python&quot;, &quot;command&quot;: &quot;sublime_tmpl&quot;, &quot;keys&quot;: [&quot;ctrl+alt+p&quot;], &quot;args&quot;: &#123;&quot;type&quot;: &quot;python&quot;&#125; &#125;, ] 这样用快捷键ctrl+alt+p可以快捷新建py文件并自动填写文件头 侧边栏字体大小修改插件PackageResourceViewer修改方法：插件安装完后Ctrl+alt+P打开搜索栏，搜索PackageResourceViewer名称，选择open resource在跳出的搜索框搜索主题名然后再搜索主题名下的主题文件的名称打开，出现主题配置文件，搜索修改需要的参数即可。 安装Anaconda1.相关配置均需在”Preferences”-“Package settings”-“Anaconda”中选择1.1“Settings-Default”中，手动设置python解释器的路径，然后保存。设置python_interpreter为python解释器路径Settings-User 设置：12345678&#123; &quot;python_interpreter&quot;:&quot;E:/Program/Anaconda3/python.exe&quot;, &quot;suppress_word_completions&quot;: true, &quot;suppress_explicit_completions&quot;: true, &quot;complete_parameters&quot;: true, &quot;swallow_startup_errors&quot;: true, &quot;anaconda_linting&quot;:false&#125; 工具-编译系统选择anaconda 安装sublimeREPL实现sublime内交互式命令行（使用anaconda环境）正常安装步骤，安装完成后，首选项-浏览插件目录\SublimeREPL\config新建文件夹，Python37(根据anaconda的python环境版本确定)，将Python文件夹中的文件全部复制到Python37文件夹。打开Main.sublime-menu文件，替换所有的Python为Python37（改个名字）除了各部分的1"syntax": "Packages/Python/Python.tmLanguage", 中的Python不替换。打开Main.sublime-menu文件，将所有“cmd”：后的路径改为anaconda的python环境路径(注意路径中的斜杠)1"cmd": ["D:/anaconda/envs/py3k/python.exe", "-i", "-u"], 打开Default.sublime-commands文件，替换所有Python为Python37快捷键添加如下代码，同理可以添加ipython运行。1234567891011121314//anaconda环境下运行sublimeREPL_pdb&#123;&quot;keys&quot;:[&quot;f6&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python37 - PDB current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_Python37_pdb&quot;, &quot;file&quot;: &quot;config/Python37/Main.sublime-menu&quot;&#125;&#125;,//anaconda环境下运行sublimeREPL_run&#123;&quot;keys&quot;:[&quot;f5&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python37 - RUN current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_Python37_run&quot;, &quot;file&quot;: &quot;config/Python37/Main.sublime-menu&quot;&#125;&#125;, pdb常用命令 快捷键设置1234567/*光标右侧为括号一类的字符时，回车键移动光标（回车的话用shift enter）*/ &#123;"keys": ["enter"], "command": "move", "args": &#123;"by": "characters", "forward": true&#125;, "context": [ &#123; "key": "following_text", "operator": "regex_contains", "operand": "^[)\\]\\&gt;\\'\\\"\\ %&gt;\\&#125;\\;\\,]", "match_all": true &#125;, &#123; "key": "preceding_text", "operator": "not_regex_match", "operand": "^.*\\&#123;$", "match_all": true &#125; ] &#125;,]]></content>
+      <categories>
+        <category>Python学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Sublime Text</tag>
+        <tag>Anaconda</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博文图片自动上传腾讯云、SMMS图床并替换博文内图片链接]]></title>
     <url>%2Fmarkdownpic.html</url>
     <content type="text"><![CDATA[欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 起因 刚开始折腾Hexo博客的时候，各种修改各种查，发现网上许多教程已经过时了，于是乎决定把自己搭建博客的过程整理成文章。在用Typora写文章的时候发现，文章里插入的图片是个问题，尤其是在用截图的时候，习惯上都是截图直接粘贴进去。但是文章在发布的时候图片的地址还是用的本地路径，导致了图片显示有问题。 网上查了一下，大都是几种解决方法：插入后修改为相对路径，把图片放到source文件夹里；安装插件，渲染文章的时候自动替换图片链接。这两种都需要把图片放到Github Pages空间里，长此以往占用的内存会越来越大；还有就是使用在线的Markdown编辑器，可以实时把图片上传，这种还不错，但没试过截图插入行不行；再者就是提前把图片上传到图床，插入时就用图床的链接。感觉这几种解决方法都不是很完美，于是用我粗糙的Python技能写了一个脚本，用来在发布文章之前自动把文章中的图片上传到腾讯云存储对象或者SMMS图床，并且把返回来的链接替换掉原来的链接。 关于脚本项目Github链接工作流程很简单，在运行脚本后脚本会用正则表达式匹配!开头)的链接（所以用Html语法插入的图片不管用），然后提取出里面的本地图片地址，根据运行脚本时候的选择上传到腾讯云存储对象或者SMMS图床。然后根据反馈回来的图片链接再进行替换。 使用方法下载uploadpic.py放置在本地博客根目录。博客根目录命令行格式python uploadpic.py &lt;上传方法&gt; &lt;文章名&gt; 相关依赖脚本使用Python 3.4编写第三方依赖：12requestscos-python-sdk-v5 使用腾讯云上传需要，github地址https://github.com/tencentyun/cos-python-sdk-v5 注意事项1.命令： smms、tx2.文件名需输入后缀.md，非Markdown语法暂不支持。3.上传腾讯对象存储需要自己填写secret_id、secret_key、region、Bucket，上传后会自动根据上传日期建立一个YY-MM-DD格式的文件夹存储图片。 存在问题1.错误处理不明朗，出错时只能慢慢查。2.遇到文章中带js脚本代码的，容易误处理。其他的非图片链接的!开头)结尾的字符串都会误处理。 使用示例]]></content>
@@ -8,8 +32,8 @@
         <category>Python学习</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Python</tag>
+        <tag>Hexo</tag>
         <tag>Markdown</tag>
       </tags>
   </entry>
@@ -75,19 +99,6 @@
       <tags>
         <tag>Github Pages</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Sublime Text3及配置Python使用环境]]></title>
-    <url>%2Fsublimetext.html</url>
-    <content type="text"><![CDATA[安装Package Control使用(或View > Show Console menu) 打开Sublime Text控制台，将下面的Python代码粘贴到控制台里: [代码出处](https://packagecontrol.io/installation#st3)12```pythonimport urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by) 如果在Perferences-&gt;package settings中看到package control这一项，则表明安装成功。 用Package Control查看已安装的插件1.按下Ctrl+Shift+P调出命令面板。2.输入install 调出 Install Package 选项并回车。等待。在列表中选中要安装的插件，或者输入插件名(比如要安装IMESupport插件，则输入IMESupport，它会实时过滤筛选结果)，根据命令面板中的过滤结果，选择要安装的插件。 安装中文插件。搜索localiza，在搜索出来的列表中选择点击安装 如果安装失败的话可以到https://github.com/rexdf/ChineseLocalization下载源码，重命名文件夹为*ChineseLocalization*，放到`C:\Users\Root\AppData\Roaming\Sublime Text 3\Packages`中。 禁用 Sublime Text 3 检测新版本设置 Preferences -&gt; Settings-User 添加 &quot;update_check&quot;: false 安装主题推荐 Boxy Ctrl(Mac下Cmd)+Shift+P install package -&gt; Boxy Theme install package -&gt; A File Icon 其他插件#### SublimeTmpl 新建文件模板 Package settings - sublime tmpl - settings User设置， 123456789&#123; &quot;disable_keymap_actions&quot;: false, // &quot;all&quot;; &quot;html,css&quot; &quot;date_format&quot; : &quot;%Y-%m-%d %H:%M:%S&quot;, &quot;attr&quot;: &#123; &quot;author&quot;: &quot;lixint&quot;, &quot;email&quot;: &quot;lixint8@gmail.com&quot;, &quot;link&quot;: &quot;https://github.com/lixint/&quot; &#125; &#125; Package settings - sublime tmpl - key bindings-user设置 123456[ &#123; &quot;caption&quot;: &quot;Tmpl: Create python&quot;, &quot;command&quot;: &quot;sublime_tmpl&quot;, &quot;keys&quot;: [&quot;ctrl+alt+p&quot;], &quot;args&quot;: &#123;&quot;type&quot;: &quot;python&quot;&#125; &#125;, ] 这样用快捷键ctrl+alt+p可以快捷新建py文件并自动填写文件头 侧边栏字体大小修改插件PackageResourceViewer修改方法： 插件安装完后Ctrl+alt+P打开搜索栏，搜索PackageResourceViewer名称，选择open resource 在跳出的搜索框搜索主题名 然后再搜索主题名下的主题文件的名称 打开，出现主题配置文件，搜索修改需要的参数即可。 安装Anaconda1.相关配置均需在”Preferences”-“Package settings”-“Anaconda”中选择 1.1“Settings-Default”中，手动设置python解释器的路径，然后保存。 设置python_interpreter为python解释器路径 Settings-User 设置： 12345678&#123; &quot;python_interpreter&quot;:&quot;E:/Program/Anaconda3/python.exe&quot;, &quot;suppress_word_completions&quot;: true, &quot;suppress_explicit_completions&quot;: true, &quot;complete_parameters&quot;: true, &quot;swallow_startup_errors&quot;: true, &quot;anaconda_linting&quot;:false&#125; 工具-编译系统选择anaconda 安装sublimeREPL实现sublime内交互式命令行（使用anaconda环境）正常安装步骤，安装完成后，首选项-浏览插件目录\SublimeREPL\config 新建文件夹，Python37(根据anaconda的python环境版本确定)，将Python文件夹中的文件全部复制到Python37文件夹。 打开Main.sublime-menu文件，替换所有的Python为Python37（改个名字）除了各部分的 1"syntax": "Packages/Python/Python.tmLanguage", 中的Python不替换。 打开Main.sublime-menu文件，将所有“cmd”：后的路径改为anaconda的python环境路径(注意路径中的斜杠) 1"cmd": ["D:/anaconda/envs/py3k/python.exe", "-i", "-u"], 打开Default.sublime-commands文件，替换所有Python为Python37 快捷键添加如下代码，同理可以添加ipython运行。 1234567891011121314//anaconda环境下运行sublimeREPL_pdb&#123;&quot;keys&quot;:[&quot;f6&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python37 - PDB current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_Python37_pdb&quot;, &quot;file&quot;: &quot;config/Python37/Main.sublime-menu&quot;&#125;&#125;,//anaconda环境下运行sublimeREPL_run&#123;&quot;keys&quot;:[&quot;f5&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python37 - RUN current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_Python37_run&quot;, &quot;file&quot;: &quot;config/Python37/Main.sublime-menu&quot;&#125;&#125;, pdb常用命令| 命令 | 解释 || ——————- | ————————– || break 或 b 设置断点 | 设置断点 || continue 或 c | 继续执行程序 || list 或 l | 查看当前行的代码段 || step 或 s | 进入函数 || return 或 r | 执行代码直到从当前函数返回 || exit 或 q | 中止并退出 || next 或 n | 执行下一行 || pp | 打印变量的值 || help | 帮助 | 快捷键设置1234567/*光标右侧为括号一类的字符时，回车键移动光标（回车的话用shift enter）*/ &#123;"keys": ["enter"], "command": "move", "args": &#123;"by": "characters", "forward": true&#125;, "context": [ &#123; "key": "following_text", "operator": "regex_contains", "operand": "^[)\\]\\&gt;\\'\\\"\\ %&gt;\\&#125;\\;\\,]", "match_all": true &#125;, &#123; "key": "preceding_text", "operator": "not_regex_match", "operand": "^.*\\&#123;$", "match_all": true &#125; ] &#125;,]]></content>
-      <categories>
-        <category>Python学习</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Sublime Text</tag>
-        <tag>Anaconda</tag>
       </tags>
   </entry>
 </search>
