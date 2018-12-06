@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lixint.me/article.html</loc>
+    
+    <lastmod>2018-12-06T06:40:25.181Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.lixint.me/markdownpic.html</loc>
+    
+    <lastmod>2018-12-06T06:39:39.071Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
+    
+    <lastmod>2018-12-06T03:11:36.993Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lixint.me/sublimetext.html</loc>
     
     <lastmod>2018-12-06T02:08:18.569Z</lastmod>
@@ -12,20 +33,6 @@
     <loc>https://www.lixint.me/pythoncommand.html</loc>
     
     <lastmod>2018-12-06T02:07:26.985Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
-    
-    <lastmod>2018-12-04T02:38:14.477Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lixint.me/markdownpic.html</loc>
-    
-    <lastmod>2018-12-04T02:37:38.644Z</lastmod>
     
   </url>
   
