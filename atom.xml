@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lixint.me/"/>
-  <updated>2018-12-06T07:13:32.276Z</updated>
+  <updated>2018-12-09T10:05:06.595Z</updated>
   <id>https://www.lixint.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯云拼团AMD CPU云服务器，只需8元/月！</title>
+    <link href="https://www.lixint.me/txamd.html"/>
+    <id>https://www.lixint.me/txamd.html</id>
+    <published>2018-12-09T09:50:09.000Z</published>
+    <updated>2018-12-09T10:05:06.595Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://cloud.tencent.com/act/group/amd/detail?from=10137&group=59675" style="color: #ff0033" title="参团链接" rel="noopener" target="_blank"><strong>点击参加我的团，买4个月送2个月</strong></a></p><h4 id="活动时间"><a href="#活动时间" class="headerlink" title="活动时间"></a>活动时间</h4><p>2018.11.28-2018.12.11；</p><h4 id="机器配置"><a href="#机器配置" class="headerlink" title="机器配置"></a>机器配置</h4><ul><li>核心：1核CPU</li><li>内存：1GB</li><li>硬盘：50GB</li><li>流量：不限制</li><li>带宽：1Mbps （1个外网IP）</li><li>架构：KVM</li></ul><h4 id="测试IP"><a href="#测试IP" class="headerlink" title="测试IP"></a>测试IP</h4><p>118.24.216.247</p><h4 id="活动页面"><a href="#活动页面" class="headerlink" title="活动页面"></a>活动页面</h4><p><a href="http://learntogether.ga/go/txy/" target="_blank" rel="noopener">活动页面</a></p><h4 id="机器性能"><a href="#机器性能" class="headerlink" title="机器性能"></a>机器性能</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">----------------------------------------------------------------------</span><br><span class="line">CPU model            : AMD EPYC Processor</span><br><span class="line">Number of cores      : 1</span><br><span class="line">CPU frequency        : 1996.232 MHz</span><br><span class="line">Total size of Disk   : 50.0 GB (1.6 GB Used)</span><br><span class="line">Total amount of Mem  : 992 MB (268 MB Used)</span><br><span class="line">Total amount of Swap : 0 MB (0 MB Used)</span><br><span class="line">System uptime        : 0 days, 0 hour 5 min</span><br><span class="line">Load average         : 0.04, 0.07, 0.05</span><br><span class="line">OS                   : CentOS 7.2.1511</span><br><span class="line">Arch                 : x86_64 (64 Bit)</span><br><span class="line">Kernel               : 3.10.0-514.26.2.el7.x86_64</span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">I/O speed(1st run)   : 64.9 MB/s</span><br><span class="line">I/O speed(2nd run)   : 94.8 MB/s</span><br><span class="line">I/O speed(3rd run)   : 98.2 MB/s</span><br><span class="line">Average I/O speed    : 86.0 MB/s</span><br></pre></td></tr></table></figure><h4 id="网络情况"><a href="#网络情况" class="headerlink" title="网络情况"></a>网络情况</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Node Name     Upload Speed      Download Speed      Latency     </span><br><span class="line">襄阳电信      1.23 Mbit/s       0.00 Mbit/s         000.000 ms </span><br><span class="line">昆明电信      1.11 Mbit/s       21.54 Mbit/s        49.826 ms  </span><br><span class="line">上海电信      1.10 Mbit/s       20.03 Mbit/s        87.691 ms  </span><br><span class="line">沈阳联通      1.15 Mbit/s       21.56 Mbit/s        227.141 ms </span><br><span class="line">西安联通      1.11 Mbit/s       21.24 Mbit/s        100.362 ms </span><br><span class="line">西安移动      1.25 Mbit/s       21.34 Mbit/s        52.579 ms  </span><br><span class="line">宁波移动      0.95 Mbit/s       21.61 Mbit/s        70.527 ms</span><br></pre></td></tr></table></figure><h4 id="活动对象"><a href="#活动对象" class="headerlink" title="活动对象"></a>活动对象</h4><p>  老用户（团长）：购买过本活动拼团AMD服务器且产品在有效期内的个人用户，每人限购1次新用户（团员）：未在腾讯云付费购买过任何产品的个人用户</p><h4 id="拼团奖励"><a href="#拼团奖励" class="headerlink" title="拼团奖励"></a>拼团奖励</h4><p>  1）团长奖励（成功推荐团员）：1-3人，赠送云服务器时长=拼团人数+1个月4-10人，赠送云服务器时长=拼团人数+5个月11人以上，赠送云服务器时长=拼团人数+10个月(最高40个月)</p><p>2）团员奖励：通过团长拼团链接购买1核1G云服务器，买4个月送2个月。</p><p><a href="https://cloud.tencent.com/act/group/amd/detail?from=10137&group=59675" style="color: #ff0033" title="参团链接" rel="noopener" target="_blank"><strong>点击参加我的团，买4个月送2个月</strong></a></p><h4 id="活动规则"><a href="#活动规则" class="headerlink" title="活动规则"></a>活动规则</h4><p>  ☆本次活动云服务器全部基于AMD EPYC(霄龙)处理器平台1）本次活动仅面向个人用户，每个用户仅支持参与一次拼团活动，团长开团失败后可重新开团，每个团最多允许200个团员参与2）团长推荐1个或以上团员成功通过专属拼团链接，于开团24小时内完成购买，则拼团成功3）团长奖励于开团24小时后发放，需前往活动首页领取4）团员同一个身份证号码对应的多个账号仅限一个帐号拼团购买，限购1台本活动云服务器，1核1G1M带宽，50G系统盘的云服务器5）团员购买时长可选：4、8、12个月，最长购买时长为12个月6）续费规则：本活动包含的云服务器套餐按照官网原价续费7）本活动支付时不支持代金券支付且不支持无理由退款8）若退款成功，不再恢复开团/拼团资格，退款金额不含获取奖励部分；若开团已成功，团员不支持退费9）用户购买成功后不支持降配以及网络调整操作10）若团长对所购买的拼团云服务器进行了任何配置调整，视为无效，无法领取活动奖励11）为保证活动的公平公正，腾讯云有权对恶意刷抢(如通过程序等技术手段)活动资源，长期资源闲置，利用资源从事违法违规行为的用户收回云资源12）腾讯云有权根据自身运营安排，自主决定和调整本活动的具体规则，具体活动规则以活动页公布规则为准。相关规则一经公布即产生效力，您应当予以遵守。</p>]]></content>
+    
+    <summary type="html">
+    
+      腾讯云良心活动，8元/月，最多可优惠12个月。
+    
+    </summary>
+    
+      <category term="VPS" scheme="https://www.lixint.me/categories/VPS/"/>
+    
+    
+      <category term="博客搭建" scheme="https://www.lixint.me/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客新建文章并发布</title>
@@ -108,9 +130,9 @@
     
       <category term="Hexo" scheme="https://www.lixint.me/tags/Hexo/"/>
     
-      <category term="Python" scheme="https://www.lixint.me/tags/Python/"/>
-    
       <category term="Markdown" scheme="https://www.lixint.me/tags/Markdown/"/>
+    
+      <category term="Python" scheme="https://www.lixint.me/tags/Python/"/>
     
   </entry>
   
@@ -158,11 +180,11 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
+      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
     
       <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
-      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
+      <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
     
       <category term="博客搭建" scheme="https://www.lixint.me/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
@@ -186,11 +208,11 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
+      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
+    
       <category term="Hexo" scheme="https://www.lixint.me/tags/Hexo/"/>
     
       <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
-    
-      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
   </entry>
   
@@ -236,9 +258,9 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
-    
       <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
+    
+      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
   </entry>
   
