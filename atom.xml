@@ -108,9 +108,9 @@
     
       <category term="Hexo" scheme="https://www.lixint.me/tags/Hexo/"/>
     
-      <category term="Markdown" scheme="https://www.lixint.me/tags/Markdown/"/>
-    
       <category term="Python" scheme="https://www.lixint.me/tags/Python/"/>
+    
+      <category term="Markdown" scheme="https://www.lixint.me/tags/Markdown/"/>
     
   </entry>
   
@@ -158,11 +158,11 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
+      <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
     
       <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
-      <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
+      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
     
       <category term="博客搭建" scheme="https://www.lixint.me/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
@@ -186,11 +186,11 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
-    
       <category term="Hexo" scheme="https://www.lixint.me/tags/Hexo/"/>
     
       <category term="Git" scheme="https://www.lixint.me/tags/Git/"/>
+    
+      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
   </entry>
   
@@ -236,9 +236,9 @@
       <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
-    
       <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
+    
+      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
     
   </entry>
   
