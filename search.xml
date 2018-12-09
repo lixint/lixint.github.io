@@ -45,8 +45,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Markdown</tag>
         <tag>Python</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -70,9 +70,9 @@
         <category>博客搭建</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Github</tag>
         <tag>Github Pages</tag>
+        <tag>Github</tag>
+        <tag>Git</tag>
         <tag>博客搭建</tag>
       </tags>
   </entry>
@@ -84,9 +84,9 @@
         <category>博客搭建</category>
       </categories>
       <tags>
+        <tag>Github</tag>
         <tag>Hexo</tag>
         <tag>Git</tag>
-        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -109,8 +109,8 @@
         <category>博客搭建</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Github Pages</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
 </search>
