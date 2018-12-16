@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.lixint.me/txamd.html</loc>
-    <lastmod>2018-12-16T06:48:47.001Z</lastmod>
+    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
+    <lastmod>2018-12-16T07:03:46.005Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/sublimetext.html</loc>
+    <lastmod>2018-12-16T07:00:19.452Z</lastmod>
+  </url>  <url>
+    <loc>https://www.lixint.me/article.html</loc>
+    <lastmod>2018-12-16T06:58:31.999Z</lastmod>
+  </url>  <url>
+    <loc>https://www.lixint.me/errortype.html</loc>
+    <lastmod>2018-12-16T06:55:38.917Z</lastmod>
+  </url>  <url>
+    <loc>https://www.lixint.me/txamd.html</loc>
     <lastmod>2018-12-16T06:48:47.001Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/pythoncommand.html</loc>
@@ -16,13 +25,10 @@
     <loc>https://www.lixint.me/hexovps.html</loc>
     <lastmod>2018-12-16T06:48:46.997Z</lastmod>
   </url>  <url>
-    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
-    <lastmod>2018-12-16T06:48:46.996Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/hexo-git.html</loc>
+    <loc>https://www.lixint.me/hexo-githubpages.html</loc>
     <lastmod>2018-12-16T06:48:46.994Z</lastmod>
   </url>  <url>
-    <loc>https://www.lixint.me/hexo-githubpages.html</loc>
+    <loc>https://www.lixint.me/hexo-git.html</loc>
     <lastmod>2018-12-16T06:48:46.994Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/hexo-blog.html</loc>
@@ -31,13 +37,7 @@
     <loc>https://www.lixint.me/githubpage.html</loc>
     <lastmod>2018-12-16T06:48:46.992Z</lastmod>
   </url>  <url>
-    <loc>https://www.lixint.me/errortype.html</loc>
-    <lastmod>2018-12-16T06:48:46.992Z</lastmod>
-  </url>  <url>
     <loc>https://www.lixint.me/ecs.html</loc>
     <lastmod>2018-12-16T06:48:46.991Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/article.html</loc>
-    <lastmod>2018-12-16T06:48:46.990Z</lastmod>
   </url>
 </urlset>
