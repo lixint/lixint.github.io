@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[常用小工具汇总]]></title>
+    <url>%2Ftools.html</url>
+    <content type="text"><![CDATA[本文最后更新于2018年12月18日17:34可能会因为没有更新而失效，如已失效或需要修正，请留言！ 查询ip地址位置与运营商]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客常见错误分析]]></title>
     <url>%2Ferrortype.html</url>
     <content type="text"><![CDATA[本文最后更新于2018年12月18日11:14可能会因为没有更新而失效，如已失效或需要修正，请留言！ 欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 常见错误分析以下是常见的错误类型： YAML 解析错误 12JS-YAML: incomplete explicit mapping pair; a key node is missed at line 18, column 29:last_updated: Last updated: %s 如果 YAML 字符串中包含冒号（:）的话，请加上引号。 12JS-YAML: bad indentation of a mapping entry at line 18, column 31:last_updated:&quot;Last updated: %s&quot; 请确认您使用空格进行缩进（Soft tab），并确认冒号后有加上一个空格。 您可参阅YAML 规范以取得更多信息。 EMFILE 错误1Error: EMFILE, too many open files 虽然 Node.js 有非阻塞 I/O，同步 I/O 的数量仍被系统所限制，在生成大量静态文件的时候，您可能会碰到 EMFILE 错误，您可以尝试提高同步 I/O 的限制数量来解决此问题。1$ ulimit -n 10000 （这一命令只对Linux系统有效） Git 部署问题1fatal: &apos;username.github.io&apos; does not appear to be a git repository 请确认您已经在电脑上配置 git，或改用 HTTPS 库（repository）地址。 服务器问题1Error: listen EADDRINUSE 您可能同时开启两个 Hexo 服务器，或者有其他应用程序正在占用相同的端口，请尝试修改 port 参数，或是在启动 Hexo 服务器时加上 -p 选项。1$ hexo server -p 5000 插件安装问题1npm ERR! node-waf configure build 当您尝试安装以 C/C++ 或其他非 JavaScript 语言所编写的插件时，可能会遇到此类问题，请确认您已经在电脑上安装相对应的编译器。 DTrace 错误 （Mac OS X）123&#123; [Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;&#123; [Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;&#123; [Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125; DTrace 安装可能有错误 , 使用下列命令:1$ npm install hexo --no-optional 参考 #1326 在 Jade 或 Swig 遍历资料Hexo 使用 Warehouse 存储资料，它不是一般数组所以必须先进行类型转型才能遍历。 undefined 资料没有更新有时资料可能没有被更新，或是生成的文件与修改前的相同，您可以尝试清除缓存并再执行一次。1$ hexo clean 泄露（Escape）内容Hexo 使用 Nunjucks 来解析文章（旧版本使用 Swig，两者语法类似），内容若包含 `{{ }}` 或 `{% %}` 可能导致解析错误，您可以用 raw 标签包裹来避免潜在问题发生。123&#123;% raw %&#125;Hello &#123;&#123; sensitive &#125;&#125;&#123;% endraw %&#125; ENOSPC 错误 （Linux）运行 $ hexo server 命令有时会返回这样的错误：1Error: watch ENOSPC ... 它可以用过运行 $ npm dedupe 来解决，如果不起作用的话，可以尝试在 Linux 终端中运行下列命令：1$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p 这将会提高你能监视的文件数量。 Process Out of Memory当hexo g时，遇到以下错误：1FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - process out of memory 如下，更改hexo-cli文件的第一行，来增大nodejs堆内存.该bug已在新版本修复。1#!/usr/bin/env node --max_old_space_size=8192 Git Deployment ProblemsRPC failed12error: RPC failed; result=22, HTTP code = 403fatal: &apos;username.github.io&apos; does not appear to be a git repository 确保你有你的电脑上设置git正确或尝试使用HTTPS存储库URL。Error: ENOENT: no such file or directory这个需要有一定的git的知识，因为可能是由于写错了标签,类别,或文件名，导致本地和github冲突了，Git不能自动合并这一变化所以它打破了自动分支。解决办法： 检查文章的标签和类别,确保本地和github上是相同的。 合并分支（Commit）。 清除，重构。在站点目录下，命令行（即Git Bash）运行hexo clean和hexo g 手动将站点目录下的public文件夹复制到您的桌面 从你的master分支切换到部署在本地分支。 从桌面复制public文件夹到本地分支。 合并分支到github（Commit）。 切回master分支。 Server Problems1Error: listen EADDRINUSE 你可能使用相同的端口，同时开启了两个Hexo服务器。如果需要同时开启，可以尝试修改端口设置：1$ hexo server -p 5000 Plugin Installation Problems1npm ERR! node-waf configure build 这个错误可能发生在试图安装一个用Cc++或另一个javascript语言编写的插件。确保您已经安装了正确的编译器在您的计算机上。 Iterate Data Model on Jade or SwigHexo使用仓库的数据模型。这不是一个数组,所以你可能需要将对象转换为iterable。 undefined No command is executed那个不能使用除help、init和version以外的命令行（即Git Bash）时, 有可能时站点目录下的package.json文件，缺少hexo ，如下:12345&#123; &quot;hexo&quot;: &#123; &quot;version&quot;: &quot;3.2.2&quot; &#125;&#125; ENOSPC Error (Linux)如果运行命令$ hexo server 返回一个错误:1Error: watch ENOSPC … 可以通过运行$ npm dedupe或者以下命令行（即Git Bash）：1$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p 来增加测试时，你可以看见的文件数量。 EMPERM Error (Windows Subsystem for Linux)如果在Windows Subsystem for Linux，运行命令$ hexo server 返回这个错误:1Error: watch /path/to/hexo/theme/ EMPERM 因为目前在Windows Subsystem for Linux中，有些内容更改时，还不能实时更新到hexo服务器。所以需要重新编译，再启动服务器：12hexo ghexo s Template render error有时运行命令$ hexo g 返回一个错误:12FATAL Something’s wrong. Maybe you can find the solution here: &lt;http://hexo.io/docs/troubleshooting.html&gt;Template render error: (unknown path) 这意味着有些认不出来单词在你的文件，并且很可能在你的新博文,或者配置文件_config.yml中，比如缩进错误：错误例子：1234plugins:hexo-generator-feedhexo-generator-sitemap\ `]]></content>
@@ -100,8 +105,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Next主题</tag>
         <tag>博客搭建</tag>
+        <tag>Next主题</tag>
       </tags>
   </entry>
   <entry>
@@ -126,8 +131,8 @@
         <category>博客搭建</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Github</tag>
+        <tag>Hexo</tag>
         <tag>Git</tag>
       </tags>
   </entry>
