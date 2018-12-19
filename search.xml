@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[常用小工具汇总]]></title>
     <url>%2Ftools.html</url>
-    <content type="text"><![CDATA[本文最后更新于2018年12月18日17:34可能会因为没有更新而失效，如已失效或需要修正，请留言！ 查询ip地址位置与运营商]]></content>
+    <content type="text"><![CDATA[本文最后更新于2018年12月18日20:53可能会因为没有更新而失效，如已失效或需要修正，请留言！ 查询ip地址位置与运营商mediafile网盘]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hexo博客常见错误分析]]></title>
@@ -86,7 +86,7 @@
   <entry>
     <title><![CDATA[Hexo博文图片自动上传腾讯云、SMMS图床并替换博文内图片链接]]></title>
     <url>%2Fmarkdownpic.html</url>
-    <content type="text"><![CDATA[本文最后更新于2018年12月16日17:08可能会因为没有更新而失效，如已失效或需要修正，请留言！ 欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 起因 刚开始折腾Hexo博客的时候，各种修改各种查，发现网上许多教程已经过时了，于是乎决定把自己搭建博客的过程整理成文章。在用Typora写文章的时候发现，文章里插入的图片是个问题，尤其是在用截图的时候，习惯上都是截图直接粘贴进去。但是文章在发布的时候图片的地址还是用的本地路径，导致了图片显示有问题。 网上查了一下，大都是几种解决方法：插入后修改为相对路径，把图片放到source文件夹里；安装插件，渲染文章的时候自动替换图片链接。这两种都需要把图片放到Github Pages空间里，长此以往占用的内存会越来越大；还有就是使用在线的Markdown编辑器，可以实时把图片上传，这种还不错，但没试过截图插入行不行；再者就是提前把图片上传到图床，插入时就用图床的链接。感觉这几种解决方法都不是很完美，于是用我粗糙的Python技能写了一个脚本，用来在发布文章之前自动把文章中的图片上传到腾讯云存储对象或者SMMS图床，并且把返回来的链接替换掉原来的链接。 关于脚本项目Github链接工作流程很简单，在运行脚本后脚本会用正则表达式匹配!开头)的链接（所以用Html语法插入的图片不管用），然后提取出里面的本地图片地址，根据运行脚本时候的选择上传到腾讯云存储对象或者SMMS图床。然后根据反馈回来的图片链接再进行替换。 使用方法下载uploadpic.py放置在本地博客根目录。博客根目录命令行格式python imgupload tx/smms/clearline &lt;filename.md&gt;例如：python imgupload tx example.md 上传至腾讯云。 相关依赖脚本使用Python 3编写第三方依赖：12requestscos-python-sdk-v5 使用腾讯云上传需要，github地址https://github.com/tencentyun/cos-python-sdk-v5 注意事项1.命令： smms、tx、clearline2.文件名需输入后缀.md，非Markdown语法暂不支持。3.上传腾讯对象存储需要自己填写secret_id、secret_key、region、Bucket，上传腾讯云对象存储默认建立一个以文件名命名的文件夹存放图片。 存在问题1.错误处理不明朗，出错时只能慢慢查。2.遇到文章中带js脚本代码的，容易误处理。其他的非图片链接的!开头)结尾的字符串都会误处理。（现已修正） 使用示例]]></content>
+    <content type="text"><![CDATA[本文最后更新于2018年12月19日21:38可能会因为没有更新而失效，如已失效或需要修正，请留言！ 欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 起因 刚开始折腾Hexo博客的时候，各种修改各种查，发现网上许多教程已经过时了，于是乎决定把自己搭建博客的过程整理成文章。在用Typora写文章的时候发现，文章里插入的图片是个问题，尤其是在用截图的时候，习惯上都是截图直接粘贴进去。但是文章在发布的时候图片的地址还是用的本地路径，导致了图片显示有问题。 网上查了一下，大都是几种解决方法：插入后修改为相对路径，把图片放到source文件夹里；安装插件，渲染文章的时候自动替换图片链接。这两种都需要把图片放到Github Pages空间里，长此以往占用的内存会越来越大；还有就是使用在线的Markdown编辑器，可以实时把图片上传，这种还不错，但没试过截图插入行不行；再者就是提前把图片上传到图床，插入时就用图床的链接。感觉这几种解决方法都不是很完美，于是用我粗糙的Python技能写了一个脚本，用来在发布文章之前自动把文章中的图片上传到腾讯云存储对象或者SMMS图床，并且把返回来的链接替换掉原来的链接。 关于脚本项目Github链接工作流程很简单，在运行脚本后脚本会用正则表达式匹配!开头)的链接（所以用Html语法插入的图片不管用），然后提取出里面的本地图片地址，根据运行脚本时候的选择上传到腾讯云存储对象或者SMMS图床。然后根据反馈回来的图片链接再进行替换。 使用方法下载uploadparser.py`、`imgupload`、`UploadImg.ini放置在本地博客根目录。如果使用腾讯云cos的话先填好secret_id、secret_key、region、Bucket 腾讯云cos配置需要的各种key的获取方式参看==&gt;腾讯云对象存储官方文档博客根目录命令行格式python imgupload tx/smms/clearline &lt;filename.md&gt;例如：python imgupload tx example.md 上传至腾讯云。 相关依赖脚本使用Python 3编写第三方依赖：12requestscos-python-sdk-v5 使用腾讯云上传需要，github地址https://github.com/tencentyun/cos-python-sdk-v5 注意事项1.命令： smms、tx、clearline2.文件名需输入后缀.md，非Markdown语法暂不支持。3.上传腾讯对象存储需要自己填写secret_id、secret_key、region、Bucket，上传腾讯云对象存储默认建立一个以文件名命名的文件夹存放图片。 存在问题1.错误处理不明朗，出错时只能慢慢查。2.遇到文章中带js脚本代码的，容易误处理。其他的非图片链接的!开头)结尾的字符串都会误处理。（现已修正） 使用示例]]></content>
       <categories>
         <category>Python学习</category>
       </categories>
