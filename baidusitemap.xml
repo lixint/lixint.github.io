@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lixint.me/hexo-blog.html</loc>
+    <lastmod>2018-12-21T09:28:46.135Z</lastmod>
+  </url>  <url>
     <loc>https://www.lixint.me/next2.html</loc>
     <lastmod>2018-12-21T09:25:35.480Z</lastmod>
   </url>  <url>
@@ -24,9 +27,6 @@
   </url>  <url>
     <loc>https://www.lixint.me/pythoncommand.html</loc>
     <lastmod>2018-12-16T09:08:52.561Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/hexo-blog.html</loc>
-    <lastmod>2018-12-16T09:07:35.365Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/sublimetext.html</loc>
     <lastmod>2018-12-16T09:06:44.700Z</lastmod>
