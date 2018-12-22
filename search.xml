@@ -117,8 +117,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Next主题</tag>
         <tag>博客搭建</tag>
+        <tag>Next主题</tag>
       </tags>
   </entry>
   <entry>
@@ -151,7 +151,7 @@
   <entry>
     <title><![CDATA[【持续更新】Github Pages + Hexo 博客搭建，Next主题个性化修改]]></title>
     <url>%2Fhexo-blog.html</url>
-    <content type="text"><![CDATA[本文最后更新于2018年12月21日17:28可能会因为没有更新而失效，如已失效或需要修正，请留言！欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 1.Github注册以及Github Pages2.Hexo博客本地环境安装步骤3.本地安装Hexo博客框架及发布至Github Pages4.Hexo博客主题安装及Next主题个性化修改5.新建文章并发布6.Hexo博客常见错误分析7.Hexo博客部署至云服务器8.Next主题修改第二弹 后续内容正在整理中。]]></content>
+    <content type="text"><![CDATA[本文最后更新于2018年12月22日18:15可能会因为没有更新而失效，如已失效或需要修正，请留言！欢迎加入博客搭建交流群（QQ群号60429576）==&gt;点击加入&lt;== 站内博客搭建文章汇总1.Github注册以及Github Pages2.Hexo博客本地环境安装步骤3.本地安装Hexo博客框架及发布至Github Pages4.Hexo博客主题安装及Next主题个性化修改5.新建文章并发布6.Hexo博客常见错误分析7.Hexo博客部署至云服务器8.Next主题修改第二弹9.Markdown基本语法教程 从零开始搭建博客步骤第一步 申请Github以及创建Github Pages参照文章==&gt;Github注册以及Github Pages 第二步 本地环境安装参照文章==&gt;Hexo博客本地环境安装步骤 第三步 本地安装进行博客搭建并上传只Gihub Pages参照文章==&gt; 本地安装Hexo博客框架及发布至Github Pages 至此，一个博客就已经搭建好了，后续要进行的时候对博客进行修改，让博客更加美观易用以及博文发布等操作。 第四步 进阶教程，博客主题应用及个性化修改目前已经汇总了超过30项修改方法。 参照文章1==&gt;Hexo博客主题安装及Next主题个性化修改 参照文章2==&gt;Next主题修改第二弹 第五步 开始发布新文章参照文章==&gt;新建文章并发布 文章编写==&gt;Markdown基本语法教程 第六步 Github速度慢？部署到云服务器试试Github在国内访问速度有时候会比较慢，Coding又时不时挂掉。这时将博客部署到一个云服务器上就会是一个很好的选择。 参照文章==&gt; Hexo博客部署至云服务器 遇到问题？目前Hexo搭建博客已经非常成熟了，应用也极其广泛，常见的错误都可以通过百度/Google搜索解决。 这里汇总了部分常见的错误类型以供查看==&gt;Hexo博客常见错误分析 后续内容正在整理中。]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>
