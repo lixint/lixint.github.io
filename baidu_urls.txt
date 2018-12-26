@@ -1,5 +1,5 @@
+https://www.lixint.me/filemanager.html
 https://www.lixint.me/pyenv.html
 https://www.lixint.me/markdown.html
 https://www.lixint.me/next2.html
 https://www.lixint.me/tools.html
-https://www.lixint.me/errortype.html
