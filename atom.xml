@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lixint.me/"/>
-  <updated>2018-12-30T05:57:34.783Z</updated>
+  <updated>2018-12-31T02:32:58.601Z</updated>
   <id>https://www.lixint.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu部分折腾记录</title>
+    <link href="https://www.lixint.me/ubuntu.html"/>
+    <id>https://www.lixint.me/ubuntu.html</id>
+    <published>2018-12-31T01:59:39.000Z</published>
+    <updated>2018-12-31T02:32:58.601Z</updated>
+    
+    <content type="html"><![CDATA[<p><hr style="margin: 10px 0"><em>本文最后更新于<b style="color:#ff0033">2018年12月31日10:32</b>可能会因为没有更新而失效，如已失效或需要修正，请留言！</em><hr style="margin: 10px 0"></p><h3 id="安装中文输入法"><a href="#安装中文输入法" class="headerlink" title="安装中文输入法"></a>安装中文输入法</h3><p>首先卸载电脑中存在的ibus输入法，这个时候在系统中还可以看到ibus的设置和输入法，不过没有关系，如果介意的话可以重启电脑即可消除。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt remove &apos;ibus*&apos;</span><br></pre></td></tr></table></figure><p>安装 fcitx 输入法配置框架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx-bin fcitx-table</span><br></pre></td></tr></table></figure><p>然后打开设置中心， 选中 “区域和语言” &gt; 管理已安装的语言（会提示是否安装ibus的输入法，这里选择“稍后提醒”） &gt; 键盘输入法系统中选择 “fcitx”  &gt; 应用到整个系统.</p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/ubuntu/1302940-20180818104045780-1657756622.png" alt="1302940-20180818104045780-1657756622"></p><p>这个时候重启电脑之后就可以再右上角看到 fcitx 的设置图标；</p><p>然后开始安装搜狗输入法，进入 地址：<a href="https://pinyin.sogou.com/linux/，" target="_blank" rel="noopener">https://pinyin.sogou.com/linux/，</a> 下载对应系统配置的输入法， 双击安装即可安装搜狗输入法；</p><p>如果需要安装谷歌拼音，则执行命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx-googlepinyin</span><br></pre></td></tr></table></figure><p>右键点击图标，选择 “配置当前输入法” ， 如果这是提示未安装图形配置界面，则需要执行命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install &apos;fcitx-config-gtk&apos;</span><br></pre></td></tr></table></figure><p>将自带的两个拼音输入法清除，选中我们安装的搜狗输入法， 第一项是“键盘xx”, 第二项是”搜狗输入法“，之后通过shift便可以在中英文间切换啦。</p><h3 id="安装Anaconda3"><a href="#安装Anaconda3" class="headerlink" title="安装Anaconda3"></a>安装Anaconda3</h3><h4 id="下载Anaconda"><a href="#下载Anaconda" class="headerlink" title="下载Anaconda"></a>下载Anaconda</h4><ol><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hY29uZGEuY29tL2Rvd25sb2FkLyNsaW51eA==" title="https://www.anaconda.com/download/#linux"><a style="color:#ff0033">官网下载</a><i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL2FuYWNvbmRhL2FyY2hpdmUv" title="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/"><a style="color:#ff0033">清华大学开源镜像站</a><i class="fa fa-external-link"></i></span></li></ol><p>官网下载后文件名是<code>Anaconda3-2018.12-Linux-x86_64.sh</code></p><h4 id="安装-Anaconda"><a href="#安装-Anaconda" class="headerlink" title="安装 Anaconda"></a>安装 Anaconda</h4><p>在存放 Anaconda安装包的文件夹下右键打开命令行，运行<code>.sh</code>文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-2018.12-Linux-x86_64.sh</span><br></pre></td></tr></table></figure><p>进入注册信息页面，一直回车，输入yes；</p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/ubuntu/20180718005150903.png" alt="20180718005150903"></p><p>进入安装过程。</p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/ubuntu/20180718010255132.png" alt="20180718010255132"></p><p>安装完成后，收到加入环境变量的提示信息，输入yes</p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/ubuntu/20180718010453453.png" alt="20180718010453453"></p><p>安装完成</p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/ubuntu/20180718010901206.png" alt="20180718010901206"></p><p>提示信息“Do you wish to proceed with the installation of Microsoft VSCode? [yes|no]”，输入no；</p><p>输入命令<code>sudo gedit ~/.bashrc</code>使之前的环境变量配置生效。</p><p>输入<code>conda list</code>看一下是否有效。</p><p>如果之前提示加入环境变量那里没有按yes，可以输入以下命令手动加入环境变量</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;export PATH=&quot;~/anaconda3/bin:$PATH&quot;&apos; &gt;&gt; ~/.bashrc</span><br><span class="line">sudo gedit ~/.bashrc</span><br></pre></td></tr></table></figure><h4 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`rm ``-``rf ~``/``anaconda3`</span><br></pre></td></tr></table></figure><h3 id="sudo-pip：找不到命令"><a href="#sudo-pip：找不到命令" class="headerlink" title="sudo: pip：找不到命令"></a>sudo: pip：找不到命令</h3><p>编辑文件 /etc/sudoers，将Defaults env_reset ,改为 Defaults !env_reset</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/sudoers</span><br><span class="line"></span><br><span class="line">Defaults!env_reset</span><br></pre></td></tr></table></figure><p>编辑文件~/.bashrc</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi ~/.bashrc</span><br></pre></td></tr></table></figure><p>在最后一行添加<code>alias sudo=&#39;sudo env PATH=$PATH&#39;</code></p><p>按esc输入<code>:wq!</code></p><p>添加完之后，再source一下<code>source ~/.bashrc</code></p>]]></content>
+    
+    <summary type="html">
+    
+      把移动硬盘里装上了Ubuntu18.10以后，又开始了新的折腾，再次记录以备忘
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://www.lixint.me/categories/Linux/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://www.lixint.me/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>移动硬盘安装Ubuntu18.10折腾笔记</title>
@@ -455,30 +477,6 @@
       <category term="Hexo" scheme="https://www.lixint.me/tags/Hexo/"/>
     
       <category term="Next主题" scheme="https://www.lixint.me/tags/Next%E4%B8%BB%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github注册以及Github Pages创建</title>
-    <link href="https://www.lixint.me/githubpage.html"/>
-    <id>https://www.lixint.me/githubpage.html</id>
-    <published>2018-11-21T04:05:10.000Z</published>
-    <updated>2018-12-16T08:53:58.661Z</updated>
-    
-    <content type="html"><![CDATA[<p><hr style="margin: 10px 0"><em>本文最后更新于<b style="color:#ff0033">2018年12月16日16:53</b>可能会因为没有更新而失效，如已失效或需要修正，请留言！</em><hr style="margin: 10px 0"></p><blockquote class="blockquote-center"><p>欢迎加入博客搭建交流群（QQ群号60429576）==&gt;<a style="color:#ff0033" href="http://qq.cn.hn/g6Y" title="QQ群号60429576" rel="noopener" target="_blank"><strong>点击加入</strong></a>&lt;==</p></blockquote><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="注册Github，建立Gihub-Pages仓库"><a href="#注册Github，建立Gihub-Pages仓库" class="headerlink" title="注册Github，建立Gihub Pages仓库"></a>注册Github，建立Gihub Pages仓库</h4><p>打开<a href="http://github.com" rel="noopener" title="Github首页" target="_blank">Github首页</a>，点击右上角的<strong>Sign up</strong>或者直接在2处填写信息后点击<code>Sign up for Github</code>进行注册。<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542779914101-1542779914232.png" alt="1542779914101"></p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542780176909-1542780177376.png" alt="1542780176909"></p><p>Verify account处点击两侧的箭头让图上的动物变成正的，验证完成后点击下方的<code>Creat an account</code>进到下一步。<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542780307073-1542780307139.png" alt="1542780307073"></p><p>选择<code>Free</code>方案，下方的两个选项可选可不选，点击<code>Continue</code>继续<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542780585618.png" alt="1542780585618"></p><p>然后选择<code>Skip this step</code>完成Github的注册。此时Github会给你注册时填写的邮箱发送一封验证邮件，完成邮箱验证后才可以创建仓库。<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542780713264-1542780713495.png" alt="1542780713264"></p><p><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542780938381-1542780938491.png" alt="1542780938381"></p><p>完成验证后，依次点击1，2处，在新页面点击<code>NEW</code>按钮。或者直接点击3处进行仓库创建。<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542781101767-1542781101882.png" alt="1542781101767"></p><p>填入必要的信息，这里的仓库名必须要填<code>&lt;用户名&gt;.github.io</code>例如，图示我注册的账户名为<code>creataccount2</code>，仓库名就需要填写<code>creataccount2.github.io</code>。<br>填写必要的描述，也可不填。勾选<code>Initialize this repository with a README</code>点击<code>Creat repository</code>进行创建。<br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542781520728-1542781520914.png" alt="1542781520728"></p><p>依次点击1，2新建一个文件。<img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542781616730-1542781617191.png" alt="1542781616730"></p><p>文件名为<code>index.html</code>，内容随意。点击<code>Commit new file</code>进行创建。<br>打开<code>&lt;用户名&gt;.github.io</code><br><img src="https://myself-1252916396.cos.ap-shanghai.myqcloud.com/githubpage/1542781764847-1542781764971.png" alt="1542781764847"></p><p>一个简单的网页，内容就是刚才我们输入的内容。<br>至此，Github Pages已经创建完成了。后续我们将利用Hexo博客框架对Github Pages的内容进行进一步的丰富。</p>]]></content>
-    
-    <summary type="html">
-    
-      从零开始搭建博客第一部分，Github注册及Github Pages建立
-    
-    </summary>
-    
-      <category term="博客搭建" scheme="https://www.lixint.me/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="Github Pages" scheme="https://www.lixint.me/tags/Github-Pages/"/>
-    
-      <category term="Github" scheme="https://www.lixint.me/tags/Github/"/>
     
   </entry>
   
