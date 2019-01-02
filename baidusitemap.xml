@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lixint.me/tools.html</loc>
+    <lastmod>2019-01-02T09:15:41.377Z</lastmod>
+  </url>  <url>
+    <loc>https://www.lixint.me/hd-ubuntu.html</loc>
+    <lastmod>2019-01-02T09:10:44.237Z</lastmod>
+  </url>  <url>
+    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
+    <lastmod>2019-01-02T09:00:32.504Z</lastmod>
+  </url>  <url>
     <loc>https://www.lixint.me/markdown.html</loc>
     <lastmod>2019-01-02T03:15:57.108Z</lastmod>
   </url>  <url>
@@ -15,9 +24,6 @@
   </url>  <url>
     <loc>https://www.lixint.me/ubuntu.html</loc>
     <lastmod>2018-12-31T02:46:28.288Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/hd-ubuntu.html</loc>
-    <lastmod>2018-12-30T05:57:34.783Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/pythoncommand.html</loc>
     <lastmod>2018-12-27T13:03:17.533Z</lastmod>
@@ -37,9 +43,6 @@
     <loc>https://www.lixint.me/next2.html</loc>
     <lastmod>2018-12-21T09:25:35.480Z</lastmod>
   </url>  <url>
-    <loc>https://www.lixint.me/tools.html</loc>
-    <lastmod>2018-12-18T12:53:28.594Z</lastmod>
-  </url>  <url>
     <loc>https://www.lixint.me/hexovps.html</loc>
     <lastmod>2018-12-18T03:14:52.347Z</lastmod>
   </url>  <url>
@@ -51,9 +54,6 @@
   </url>  <url>
     <loc>https://www.lixint.me/article.html</loc>
     <lastmod>2018-12-18T03:13:44.763Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
-    <lastmod>2018-12-16T09:03:13.514Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/hexo-githubpages.html</loc>
     <lastmod>2018-12-16T08:58:40.403Z</lastmod>
