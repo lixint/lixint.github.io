@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lixint.me/ubuntu.html</loc>
+    <lastmod>2019-01-05T10:57:51.748Z</lastmod>
+  </url>  <url>
     <loc>https://www.lixint.me/onedrive.html</loc>
     <lastmod>2019-01-04T09:55:14.351Z</lastmod>
   </url>  <url>
@@ -24,9 +27,6 @@
   </url>  <url>
     <loc>https://www.lixint.me/sublimetext.html</loc>
     <lastmod>2019-01-01T05:54:58.649Z</lastmod>
-  </url>  <url>
-    <loc>https://www.lixint.me/ubuntu.html</loc>
-    <lastmod>2018-12-31T02:46:28.288Z</lastmod>
   </url>  <url>
     <loc>https://www.lixint.me/pythoncommand.html</loc>
     <lastmod>2018-12-27T13:03:17.533Z</lastmod>
