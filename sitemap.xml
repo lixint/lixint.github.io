@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lixint.me/markdown.html</loc>
+    
+    <lastmod>2019-01-08T02:20:53.857Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lixint.me/ubuntu.html</loc>
     
     <lastmod>2019-01-05T10:57:51.748Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://www.lixint.me/hexo-theme-diy.html</loc>
     
     <lastmod>2019-01-02T09:00:32.504Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lixint.me/markdown.html</loc>
-    
-    <lastmod>2019-01-02T03:15:57.108Z</lastmod>
     
   </url>
   
